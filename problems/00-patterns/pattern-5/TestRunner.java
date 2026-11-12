@@ -25,12 +25,13 @@ public class TestRunner {
 
     private static String generateExpected(int n) {
         StringBuilder sb = new StringBuilder();
-        for (int i = n; i >= 1; i--) {
-            for (int j = 1; j <= i; j++) {
+        for (int i = 0; i < n; i++) {
+            int stars = n - i;
+            for (int j = 0; j < stars; j++) {
                 sb.append("*");
-                if (j < i) sb.append(" ");
+                if (j < stars - 1) sb.append(" ");
             }
-            if (i > 1) sb.append("\n");
+            if (i < n - 1) sb.append("\n");
         }
         return sb.toString();
     }
@@ -42,7 +43,7 @@ public class TestRunner {
         for (String line : lines) {
             String trimmed = line.trim();
             if (!trimmed.isEmpty()) {
-                // If user printed stars without space, standardize to space-separated
+                // If user printed without spaces (e.g. "****"), normalize to space-separated
                 if (trimmed.equals("*".repeat(trimmed.length()))) {
                     trimmed = String.join(" ", trimmed.split(""));
                 } else {
@@ -55,7 +56,7 @@ public class TestRunner {
     }
 
     public static void main(String[] args) {
-        TestHarness harness = new TestHarness("Pattern 5 - Inverted Right-Angled Triangle Star Pattern");
+        TestHarness harness = new TestHarness("Pattern 5 - Inverted Right-Angled Triangle");
         Solution sol = new Solution();
 
         // Runner wrapper
