@@ -1,0 +1,20 @@
+# Build & Compiled files
+.bin/
+bin/
+*.class
+
+# IDE & Editor configurations
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & temp
+*.log
+tmp/

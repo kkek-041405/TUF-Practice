@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "tier": "Sample",
+    "name": "Sample 1 (n=4)",
+    "input": 4,
+    "expectedRows": 4
+  },
+  {
+    "id": 2,
+    "tier": "Sample",
+    "name": "Sample 2 (n=2)",
+    "input": 2,
+    "expectedRows": 2
+  },
+  {
+    "id": 3,
+    "tier": "Sample",
+    "name": "Sample 3 (n=5)",
+    "input": 5,
+    "expectedRows": 5
+  },
+  {
+    "id": 4,
+    "tier": "Boundary",
+    "name": "Minimum Bound (n=1)",
+    "input": 1,
+    "expectedRows": 1
+  },
+  {
+    "id": 5,
+    "tier": "Boundary",
+    "name": "Small (n=3)",
+    "input": 3,
+    "expectedRows": 3
+  },
+  {
+    "id": 6,
+    "tier": "Corner",
+    "name": "Odd Size (n=7)",
+    "input": 7,
+    "expectedRows": 7
+  },
+  {
+    "id": 7,
+    "tier": "Corner",
+    "name": "Even Size (n=10)",
+    "input": 10,
+    "expectedRows": 10
+  },
+  {
+    "id": 8,
+    "tier": "Stress",
+    "name": "Medium-Large (n=25)",
+    "input": 25,
+    "expectedRows": 25
+  },
+  {
+    "id": 9,
+    "tier": "Boundary-Max",
+    "name": "Maximum Bound (n=100)",
+    "input": 100,
+    "expectedRows": 100
+  }
+]
